@@ -1,21 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 //* Container & BreakPoints
 $containerWidth: 1450;
-$containerYPadding: 18;
+$containerYPadding: 12;
 $containerXPadding: 25;
-$breakpoint1450: 1449.98 + px;
+$breakpoint1200: 1199.98 + px;
 $breakpoint992: 991.98 + px;
-$breakpoint768: 767.98 + px;
-$breakpoint576: 575.98 + px;
-$breakpoint480: 479.98 + px;
-$burgerBreakpoint: $breakpoint576;
+$breakpoint736: 736.01 + px;
+$burgerBreakpoint: $breakpoint736;
 
 //* Colors
-$bodyBackground: black;
+$bodyBackground: #0F1624;
 
 
 //* Fonts
 %font{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   // line-height: 48px;

@@ -1,0 +1,142 @@
+@import '../../../vars';
+
+.header{
+    padding-top: 8px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 3px;
+        &-img{
+            width: 30px;
+            height: 30px;
+        }
+        &-text{
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    &__nav{
+        display: flex;
+        justify-content: center;
+        gap: 33px;
+        &-item{
+            white-space: nowrap;
+        }
+        &-link{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.75);
+            transition: 0.4s ease;
+            &:hover {
+                color: #fff;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+    &__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        &-item{
+            transition: 0.3s ease;
+            color: white;
+            border-radius: 50px;
+            padding: 8px;
+            &:hover {
+                background-color: #212d45;
+                transform: scale(1.2);
+                cursor: pointer;
+                
+            }
+        }
+    }
+    &__link{
+        width: 25px;
+        height: 25px;
+    }
+    &__burger{
+        &-icon{
+            display: none;
+            width: 27px;
+            height: 27px;
+            margin-left: 15px;
+        }
+        &-menu{
+            position:absolute;
+            visibility: hidden;
+            top: 120px;
+            right: 20px;
+            background-color: white;
+            border-radius: 10px;
+            max-width: 200px;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            gap: 15px;
+            font-size: 16px;
+            transition: all 0s ease;
+            &.active{
+                transition: all .5s ease;
+                visibility: visible;
+                top: 65px;
+            }
+        }
+        &-item{
+            color: #0F1624;
+            transition: 0.4s ease;
+            &:hover {
+                color: black;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+    @media (max-width: 900px){
+        &__nav{
+            gap: 25px;
+            &-link{
+                font-size: 16px;
+            }
+        }
+        &__links{
+            gap: 10px;
+            &-item{
+                transition: 0.3s ease;
+                color: white;
+                border-radius: 40px;
+                padding: 5px;
+            }
+        }
+        &__link{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    @media (max-width: $burgerBreakpoint){
+        &__nav{
+            display: none;
+        }
+        &__burger{
+            &-icon{
+                display: block;
+            }
+        }
+        &__link{
+            width: 25px;
+            height: 25px;
+        }
+        &__links{
+            gap: 8px;
+        }
+    }
+}

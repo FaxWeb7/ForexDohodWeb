@@ -1,5 +1,6 @@
 @import './reset';
 @import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 html {
   height: 100%;
@@ -37,15 +38,15 @@ html {
   padding: $containerYPadding + px $containerXPadding + px;
 }
 
-@media (min-width: 1200px){
+@media (min-width: $breakpoint992){
   .container {
-      max-width: 1140px;
+      max-width: 960px;
   }
 }
 
-@media (min-width: 992px){
+@media (min-width: $breakpoint1200){
   .container {
-      max-width: 960px;
+      max-width: 1140px;
   }
 }
 
