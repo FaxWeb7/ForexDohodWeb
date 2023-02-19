@@ -37,6 +37,18 @@ html {
   padding: $containerYPadding + px $containerXPadding + px;
 }
 
+@media (min-width: 1200px){
+  .container {
+      max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px){
+  .container {
+      max-width: 960px;
+  }
+}
+
 //* Body and ...
 body{
   @extend %font;

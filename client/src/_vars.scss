@@ -1,7 +1,7 @@
 //* Container & BreakPoints
 $containerWidth: 1450;
-$containerYPadding: 60;
-$containerXPadding: 30;
+$containerYPadding: 18;
+$containerXPadding: 25;
 $breakpoint1450: 1449.98 + px;
 $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
@@ -10,16 +10,15 @@ $breakpoint480: 479.98 + px;
 $burgerBreakpoint: $breakpoint576;
 
 //* Colors
-$bodyBackground: white;
+$bodyBackground: black;
 
 
 //* Fonts
 %font{
-  font-family: 'name', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  // line-height: 48px;
   color: white;
 }
 

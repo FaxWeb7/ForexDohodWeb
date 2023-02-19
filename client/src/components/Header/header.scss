@@ -1,1 +1,33 @@
 @import '../../vars';
+
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        &-img{
+            width: 65px;
+            height: 65px;
+        }
+        &-text{
+            font-size: 22px;
+        }
+    }
+    &__nav{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        &-item{
+            white-space: nowrap;
+        }
+    }
+    @media (max-widt: 948px){
+        
+    }
+}
