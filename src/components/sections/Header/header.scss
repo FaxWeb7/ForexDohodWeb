@@ -3,9 +3,12 @@
 .header{
     .container{
         padding-top: $containerYPadding + 8px;
+        padding-right: 20px;
+        padding-left: 20px;
         background-color: #0F1624;
         z-index: 10;
         position: relative;
+        max-width: 1280px !important;
     }
     &__inner{
         display: flex;
@@ -17,13 +20,14 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 3px;
+        gap: -50px;
+        gap: 6px;
         &-img{
-            width: 30px;
-            height: 30px;
+            width: 40px; //48
+            height: 40px; //27
         }
         &-text{
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
         }
     }
@@ -35,9 +39,13 @@
             white-space: nowrap;
         }
         &-link{
-            font-size: 18px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 17px;
             color: rgba(255, 255, 255, 0.75);
             transition: 0.4s ease;
+            gap: 7px;
             &:hover {
                 color: #fff;
                 opacity: 1;
@@ -116,11 +124,22 @@
             }
         }
     }
+    @media (min-width: $breakpoint992){
+        .container {
+            max-width: 1050px;
+        }
+    }
+    @media (min-width: $breakpoint1200){
+        .container {
+            max-width: 1250px;
+        }
+    }
     @media (max-width: 900px){
         &__nav{
-            gap: 25px;
+            gap: 20px;
             &-link{
-                font-size: 16px;
+                font-size: 15px;
+                gap: 4px;
             }
         }
         &__links{
@@ -143,10 +162,6 @@
             display: none;
         }
         &__logo{
-            &-img{
-                width: 40px;
-                height: 40px;
-            }
             &-text{
                 font-size: 18px;
             }

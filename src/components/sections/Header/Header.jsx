@@ -1,4 +1,4 @@
-import logo from '../../../assets/logo2.png'
+import logo from '../../../assets/logo.png'
 import { BsTelegram, BsYoutube, BsGraphUp, BsQuestionDiamond } from 'react-icons/bs'
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineAppstore } from 'react-icons/ai'
@@ -18,21 +18,21 @@ const Header = () => {
           </a>
           <ul className="header__nav">
             <li className="header__nav-item">
-              <a className="header__nav-link" href="#">Каталог</a>
+              <a className="header__nav-link" href="#"><AiOutlineAppstore />Каталог</a>
             </li>
             <li className="header__nav-item">
-              <a className="header__nav-link" href="#">Доходность</a>
+              <a className="header__nav-link" href="#"><BsGraphUp />Доходность</a>
             </li>
             <li className="header__nav-item">
-              <a className="header__nav-link" href="#">Что такое Торговый Робот?</a>
+              <a className="header__nav-link" href="#"><BsQuestionDiamond />Что такое Торговый Робот?</a>
             </li>
           </ul>
           <ul className="header__links">
             <li className="header__links-item">
-              <a href="https://www.youtube.com/@Forex_Dohod" target='_blank'><BsYoutube className="header__link" /></a>
+              <a href="https://www.youtube.com/@Forex_Dohod" target='_blank' rel="noreferrer"><BsYoutube className="header__link" /></a>
             </li>
             <li className="header__links-item">
-              <a href="https://t.me/ForexDohod" target='_blank'><BsTelegram className='header__link' /></a>
+              <a href="https://t.me/ForexDohod" rel="noreferrer" target='_blank'><BsTelegram className='header__link' /></a>
             </li>
             <div className="header__burger">
               <FiMenu className='header__burger-icon' onClick={() => setIsBurger(!isBurger)} />
