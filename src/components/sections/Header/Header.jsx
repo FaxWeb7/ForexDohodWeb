@@ -1,6 +1,7 @@
 import logo from '../../../assets/logo2.png'
-import { BsTelegram, BsYoutube } from 'react-icons/bs'
+import { BsTelegram, BsYoutube, BsGraphUp, BsQuestionDiamond } from 'react-icons/bs'
 import { FiMenu } from 'react-icons/fi'
+import { AiOutlineAppstore } from 'react-icons/ai'
 import './header.scss'
 import { useState } from 'react'
 
@@ -37,12 +38,12 @@ const Header = () => {
               <FiMenu className='header__burger-icon' onClick={() => setIsBurger(!isBurger)} />
             </div>
           </ul>
-          <div className={isBurger ? "header__burger-menu active" : "header__burger-menu"}>
-            <a href="#" className="header__burger-item">Каталог</a>
-            <a href="#" className="header__burger-item">Доходность</a>
-            <a href="#" className="header__burger-item">Что такое Торговый Робот?</a>
-          </div>
         </div>
+      </div>
+      <div className={isBurger ? "header__burger-menu active" : "header__burger-menu"}>
+        <a href="#" className="header__burger-item"><AiOutlineAppstore size={16} />Каталог</a>
+        <a href="#" className="header__burger-item"><BsGraphUp size={16} />Доходность</a>
+        <a href="#" className="header__burger-item"><BsQuestionDiamond size={18} />Что такое Торговый Робот?</a>
       </div>
     </header>
   )
