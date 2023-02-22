@@ -2,6 +2,7 @@ import logo from '../../../assets/logo.png'
 import { BsTelegram, BsYoutube, BsGraphUp, BsQuestionDiamond } from 'react-icons/bs'
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineAppstore } from 'react-icons/ai'
+import { VscChromeClose } from 'react-icons/vsc'
 import './header.scss'
 import { useState } from 'react'
 
@@ -9,7 +10,7 @@ const Header = () => {
   const [isBurger, setIsBurger] = useState(false);
 
   return (
-    <header className='header'>
+    <div className='header'>
       <div className='container'>
         <div className='header__inner'>
           <a href="/" className="header__logo">
@@ -18,13 +19,13 @@ const Header = () => {
           </a>
           <ul className="header__nav">
             <li className="header__nav-item">
-              <a className="header__nav-link" href="#"><AiOutlineAppstore />Каталог</a>
+              <a className="header__nav-link" href="#catalog"><AiOutlineAppstore />Каталог</a>
             </li>
             <li className="header__nav-item">
-              <a className="header__nav-link" href="#"><BsGraphUp />Доходность</a>
+              <a className="header__nav-link" href="#profitability"><BsGraphUp />Доходность</a>
             </li>
             <li className="header__nav-item">
-              <a className="header__nav-link" href="#"><BsQuestionDiamond />Что такое Торговый Робот?</a>
+              <a className="header__nav-link" href="#what"><BsQuestionDiamond />Что такое Торговый Робот?</a>
             </li>
           </ul>
           <ul className="header__links">
@@ -35,17 +36,17 @@ const Header = () => {
               <a href="https://t.me/ForexDohod" rel="noreferrer" target='_blank'><BsTelegram className='header__link' /></a>
             </li>
             <div className="header__burger">
-              <FiMenu className='header__burger-icon' onClick={() => setIsBurger(!isBurger)} />
+              {!isBurger ? (<FiMenu className='header__burger-icon' onClick={() => setIsBurger(!isBurger)} />) : (<VscChromeClose className='header__burger-icon' onClick={() => setIsBurger(!isBurger)} />)}
             </div>
           </ul>
         </div>
       </div>
       <div className={isBurger ? "header__burger-menu active" : "header__burger-menu"}>
-        <a href="#" className="header__burger-item"><AiOutlineAppstore size={16} />Каталог</a>
-        <a href="#" className="header__burger-item"><BsGraphUp size={16} />Доходность</a>
-        <a href="#" className="header__burger-item"><BsQuestionDiamond size={18} />Что такое Торговый Робот?</a>
+        <a href="#catalog" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><AiOutlineAppstore size={16} />Каталог</a>
+        <a href="#profitability" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><BsGraphUp size={16} />Доходность</a>
+        <a href="#what" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><BsQuestionDiamond size={18} />Что такое Торговый Робот?</a>
       </div>
-    </header>
+    </div>
   )
 }
 

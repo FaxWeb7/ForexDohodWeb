@@ -47,6 +47,7 @@
             transition: 0.4s ease;
             gap: 7px;
             &:hover {
+                transform: scale(1.025);
                 color: #fff;
                 opacity: 1;
                 cursor: pointer;
@@ -118,20 +119,11 @@
             gap: 8px;
             width: 100%;
             &:hover {
+                transform: scale(1.025);
                 color: rgb(86, 85, 85);
                 opacity: 1;
                 cursor: pointer;
             }
-        }
-    }
-    @media (min-width: $breakpoint992){
-        .container {
-            max-width: 1050px;
-        }
-    }
-    @media (min-width: $breakpoint1200){
-        .container {
-            max-width: 1250px;
         }
     }
     @media (max-width: 900px){
@@ -157,7 +149,6 @@
         }
     }
     @media (max-width: $burgerBreakpoint){
-        .container
         &__nav{
             display: none;
         }
