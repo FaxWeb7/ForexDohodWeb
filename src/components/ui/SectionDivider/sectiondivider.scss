@@ -1,14 +1,21 @@
 @import '../../../vars';
 
 .section__divider{
-  width: 64px;
+  width: 70px;
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
+  margin-bottom: 20px;
   &.purple{
     background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
   }
   &.green{
     background: linear-gradient(270deg,#00dbd7e1 0%,#00ff8cc8 100%);
+  }
+  @media(max-width: 1023px){
+    margin-bottom: 10px;
+  }
+  @media(max-width: 557px){
+    margin-bottom: 5px;
   }
 }

@@ -5,6 +5,9 @@
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media(max-width: 1023px){
+    font-size: 54px;
+  }
   @media (max-width: 820px){
     font-size: 47px;
     line-height: 55px;
