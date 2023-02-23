@@ -5,6 +5,8 @@ const SectionDivider = ({ color }) => {
     <>
       {color === 'green' ? (
         <div className='section__divider green'></div>
+      ) : color === 'red' ? (
+        <div className='section__divider red'></div>
       ) : (
         <div className='section__divider purple'></div>
       )}

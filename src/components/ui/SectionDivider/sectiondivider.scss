@@ -7,10 +7,13 @@
   background-color: #fff;
   margin-bottom: 20px;
   &.purple{
-    background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+    background: $purpleGr;
   }
   &.green{
-    background: linear-gradient(270deg,#00dbd7e1 0%,#00ff8cc8 100%);
+    background: $greenGr;
+  }
+  &.red{
+    background: $redGr;
   }
   @media(max-width: 1023px){
     margin-bottom: 10px;

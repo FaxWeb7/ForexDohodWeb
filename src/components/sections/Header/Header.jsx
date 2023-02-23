@@ -1,9 +1,9 @@
-import logo from '../../../assets/logo.png'
 import { BsTelegram, BsYoutube, BsGraphUp, BsQuestionDiamond } from 'react-icons/bs'
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineAppstore } from 'react-icons/ai'
 import { VscChromeClose } from 'react-icons/vsc'
 import './header.scss'
+import { CLIENT_URL } from '../../../constants/constants'
 import { useState } from 'react'
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
       <div className='container'>
         <div className='header__inner'>
           <a href="/" className="header__logo">
-            <img className='header__logo-img' src={logo} alt="logo" />
+            <img className='header__logo-img' src={`${CLIENT_URL}/logos/favicon.png`} alt="logo" />
             <h1 className="header__logo-text">ForexDohod</h1>
           </a>
           <ul className="header__nav">

@@ -17,7 +17,7 @@
       font-weight: 300;
       font-size: 16px;
       a{
-        color: #00ff8cc8;
+        color: #F46737;
       }
     }
     &-imgs{
@@ -38,6 +38,7 @@
     }
   }
   &__modal{
+    z-index: 12;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -76,9 +77,15 @@
     }
   }
   @media(max-width: 540px){
+    .section__divider{
+      background: $purpleGr;
+    }
     &__info{
       &-text{
         font-size: 15px;
+        a{
+          color: #945DD6;
+        }
       }
     }
     &__modal{

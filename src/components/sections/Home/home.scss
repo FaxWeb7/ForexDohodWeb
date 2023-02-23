@@ -43,7 +43,7 @@
       cursor: pointer;
       transition: all .5s ease;
       opacity: 0.85;
-      background: linear-gradient(270deg,#00DBD8 0%,#B133FF 100%);
+      background: $purpleGr;
       &:hover{
         opacity: 1.1;
         transform: scale(1.03);
@@ -62,7 +62,7 @@
       cursor: pointer;
       transition: all .5s ease;
       opacity: 0.85;
-      background: linear-gradient(270deg,#00DBD8 0%,#B133FF 100%);
+      background: $purpleGr;
       &:hover{
         opacity: 1.1;
         transform: scale(1.03);

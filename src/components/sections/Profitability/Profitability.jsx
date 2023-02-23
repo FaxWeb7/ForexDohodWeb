@@ -1,9 +1,7 @@
 import './profitability.scss'
 import SectionDivider from '../../ui/SectionDivider/SectionDivider';
 import SectionTitle from '../../ui/SectionTitle/SectionTitle';
-import profitImg1 from '../../../assets/profitImg1.png'
-import profitImg2 from '../../../assets/profitImg2.png'
-import profitImg3 from '../../../assets/profitImg3.gif'
+import { CLIENT_URL } from '../../../constants/constants'
 import { ProfitabilityText } from './ProfitabilityText'
 import { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai'
@@ -15,7 +13,7 @@ const Profitability = () => {
     <>
       <div className="profit" id='profitability'>
         <div className="container">
-          <SectionDivider color={'green'} />
+          <SectionDivider color={'red'} />
           <div className="profit__inner">
             <SectionTitle title={'Доходность'} />
             <div className="profit__info">
@@ -23,9 +21,9 @@ const Profitability = () => {
               {ProfitabilityText}
               </p>
               <div className="profit__info-imgs">
-                <img src={profitImg1} className="profit__info-img" alt='img' onClick={() => setIsModal(profitImg1)} />
-                <img src={profitImg2} className="profit__info-img 2" alt='img' onClick={() => setIsModal(profitImg2)} />
-                <img src={profitImg3} className="profit__info-img 3" alt='img' onClick={() => setIsModal(profitImg3)} />
+                <img src={`${CLIENT_URL}/profitability/profitImg1.png`} className="profit__info-img" alt='img' onClick={() => setIsModal(`${CLIENT_URL}/profitability/profitImg1.png`)} />
+                <img src={`${CLIENT_URL}/profitability/profitImg2.png`} className="profit__info-img 2" alt='img' onClick={() => setIsModal(`${CLIENT_URL}/profitability/profitImg2.png`)} />
+                <img src={`${CLIENT_URL}/profitability/profitImg3.gif`} className="profit__info-img 3" alt='img' onClick={() => setIsModal(`${CLIENT_URL}/profitability/profitImg3.gif`)} />
               </div>
             </div>
           </div>
