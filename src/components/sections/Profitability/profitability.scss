@@ -14,10 +14,10 @@
     grid-template-columns: 1.25fr 1fr;
     gap: 20px;
     &-text{
-      font-weight: 300;
+      font-weight: 200;
       font-size: 16px;
       a{
-        color: #F46737;
+        color: #945DD6;
       }
     }
     &-imgs{
@@ -77,15 +77,9 @@
     }
   }
   @media(max-width: 540px){
-    .section__divider{
-      background: $purpleGr;
-    }
     &__info{
       &-text{
         font-size: 15px;
-        a{
-          color: #945DD6;
-        }
       }
     }
     &__modal{

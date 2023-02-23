@@ -57,6 +57,21 @@
   @media(max-width: 1023px){
     margin-top: 80px;
   }
+  @media(max-width: 920px){
+    &__inner{
+      gap: 30px;
+    }
+    &__info{
+      grid-template-columns: 1fr;
+      &-img{
+        content: url($faqImg2Url);
+        margin: 0 auto;
+        grid-row-start: 1;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
   @media(max-width: 540px){
     &__modal{
       background-color: #0F1624;

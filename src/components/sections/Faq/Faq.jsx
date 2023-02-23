@@ -13,14 +13,14 @@ const Faq = () => {
     <>
       <div className="faq" id="what">
         <div className="container">
-          <SectionDivider color={'green'} />
+          <SectionDivider color={'purple'} />
           <div className="faq__inner">
             <SectionTitle title='Что за Торговый Робот?' />
             <div className="faq__info">
               <h5 className="faq__info-text">
               {FaqText}
               </h5>
-              <img src={`${CLIENT_URL}/faq/faqImg.png`} onClick={() => setIsModal(`${CLIENT_URL}/faq/faqImg.png`)} alt="img" className="faq__info-img" />
+              <img src={`${CLIENT_URL}/faq/faqImg1.png`} onClick={() => setIsModal(`${CLIENT_URL}/faq/faqImg1.png`)} alt="img" className="faq__info-img" />
             </div>
           </div>
         </div>

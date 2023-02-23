@@ -13,7 +13,7 @@ const Profitability = () => {
     <>
       <div className="profit" id='profitability'>
         <div className="container">
-          <SectionDivider color={'red'} />
+          <SectionDivider color={'purple'} />
           <div className="profit__inner">
             <SectionTitle title={'Доходность'} />
             <div className="profit__info">
