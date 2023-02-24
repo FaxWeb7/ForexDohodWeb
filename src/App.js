@@ -6,18 +6,18 @@ import Catalog from './components/sections/Catalog/Catalog'
 import Profitability from './components/sections/Profitability/Profitability'
 import Faq from './components/sections/Faq/Faq'
 import Strategies from './components/sections/Strategies/Strategies'
-import Conditions from './components/sections/Conditions/Conditions'
+import Footer from './components/sections/Footer/Footer'
 
 const App = () => {
   return (
     <div className='wrapper'>
       <Header />
       <Home />
+      <Faq />
       <Catalog />
       <Profitability />
-      <Faq />
       <Strategies />
-      <Conditions />
+      <Footer />
     </div>
   )
 }
