@@ -7,7 +7,8 @@ import { CurrencyStrategy, GoldStrategy } from './StrategiesTexts';
 
 const Strategies = () => {
   return (
-    <div className="strategies" id="strategies">
+    <div className="strategies">
+      <div className="anchor" id="strategies" />
       <div className="container">
         <SectionDivider color={'purple'} />
         <div className="strategies__inner">

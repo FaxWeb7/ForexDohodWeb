@@ -11,7 +11,8 @@ const Profitability = () => {
 
   return (
     <>
-      <div className="profit" id='profitability'>
+      <div className="profit">
+        <div className="anchor" id="profitability" />
         <div className="container">
           <SectionDivider color={'purple'} />
           <div className="profit__inner">

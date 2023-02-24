@@ -2,6 +2,7 @@ import { BsTelegram, BsYoutube, BsGraphUp, BsQuestionDiamond } from 'react-icons
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineAppstore } from 'react-icons/ai'
 import { VscChromeClose } from 'react-icons/vsc'
+import { GoGraph } from 'react-icons/go'
 import './header.scss'
 import { CLIENT_URL } from '../../../constants/constants'
 import { useState } from 'react'
@@ -19,13 +20,16 @@ const Header = () => {
           </a>
           <ul className="header__nav">
             <li className="header__nav-item">
+              <a className="header__nav-link" href="#what"><BsQuestionDiamond />FAQ</a>
+            </li>
+            <li className="header__nav-item">
               <a className="header__nav-link" href="#catalog"><AiOutlineAppstore />Каталог</a>
             </li>
             <li className="header__nav-item">
               <a className="header__nav-link" href="#profitability"><BsGraphUp />Доходность</a>
             </li>
             <li className="header__nav-item">
-              <a className="header__nav-link" href="#what"><BsQuestionDiamond />Что такое Торговый Робот?</a>
+              <a href="#strategies" className="header__nav-link"><GoGraph/>Стратегии торговли</a>
             </li>
           </ul>
           <ul className="header__links">
@@ -42,9 +46,10 @@ const Header = () => {
         </div>
       </div>
       <div className={isBurger ? "header__burger-menu active" : "header__burger-menu"}>
+        <a href="#what" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><BsQuestionDiamond size={18} />Что такое Торговый Робот?</a>
         <a href="#catalog" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><AiOutlineAppstore size={16} />Каталог</a>
         <a href="#profitability" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><BsGraphUp size={16} />Доходность</a>
-        <a href="#what" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><BsQuestionDiamond size={18} />Что такое Торговый Робот?</a>
+        <a href="#strategies" className="header__burger-item" onClick={() => setIsBurger(!isBurger)} ><GoGraph size={16} />Стратегии торговли</a>
       </div>
     </div>
   )

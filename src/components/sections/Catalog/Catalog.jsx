@@ -7,7 +7,8 @@ import { CatalogList } from './CatalogList';
 
 const Catalog = () => {
   return (
-    <section className="catalog" id="catalog">
+    <section className="catalog">
+      <div className="anchor" id="catalog" />
       <div className="container">
         <SectionDivider color={'purple'} />
         <div className="catalog__inner">

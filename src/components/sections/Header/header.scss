@@ -1,14 +1,18 @@
 @import '../../../vars';
 
 .header{
+    position: fixed;
+    width: 100%;
+    z-index: 11;
     .container{
-        padding-top: $containerYPadding + 8px;
+        padding-top: $containerYPadding + 4px;
         padding-right: 20px;
         padding-left: 20px;
         background-color: #0F1624;
         z-index: 10;
         position: relative;
         max-width: 1280px !important;
+        // border-top: 1px solid rgba(255,255,255,0.1);
     }
     &__inner{
         display: flex;
@@ -87,7 +91,7 @@
         &-menu{
             position:absolute;
             visibility: hidden;
-            top: -100px;
+            top: -150px;
             right: 0;
             left: 0;
             background-color: white;
@@ -105,7 +109,7 @@
             transition: all .5s ease;
             &.active{
                 visibility: visible;
-                top: 72px;
+                top: 68px;
             }
         }
         &-item{
@@ -128,7 +132,7 @@
     }
     @media (max-width: 900px){
         &__nav{
-            gap: 20px;
+            gap: 15px;
             &-link{
                 font-size: 15px;
                 gap: 4px;

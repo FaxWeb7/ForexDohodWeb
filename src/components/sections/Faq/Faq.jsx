@@ -11,7 +11,8 @@ const Faq = () => {
 
   return (
     <>
-      <div className="faq" id="what">
+      <div className="faq">
+        <div className="anchor" id="what" />
         <div className="container">
           <SectionDivider color={'purple'} />
           <div className="faq__inner">
