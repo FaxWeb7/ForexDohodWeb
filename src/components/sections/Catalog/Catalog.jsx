@@ -20,7 +20,7 @@ const Catalog = () => {
                 <h3 className="catalog__item-title">{title}</h3>
                 <p className="catalog__item-text">{text}</p>
                 <div className="catalog__item-btns">
-                  <a href="https://t.me/faxweb_w" rel="noreferrer" target='_blank' className="catalog__item-btn">Связаться с нами</a>
+                  <a href="https://t.me/forexdohod_owner" rel="noreferrer" target='_blank' className="catalog__item-btn">Связаться с нами</a>
                   <a href={profitLink} rel="noreferrer" target='_blank' className="catalog__item-btn tg"><VscGraphLine /></a>
                 </div>
               </li>

@@ -19,7 +19,7 @@ const Strategies = () => {
                 <AiFillGolden />
                 <div className="strategies__item-info-wrapper">
                   <h1 className="strategies__item-info-title">Золотой робот</h1>
-                  <p className="strategies__item-info-subtitle">Консервативная стратегия (1-4 сделок в день).</p>
+                  <p className="strategies__item-info-subtitle">Консервативная стратегия</p>
                 </div>
               </div>
               <p className="strategies__item-text">{GoldStrategy}</p>
@@ -29,7 +29,7 @@ const Strategies = () => {
                 <BsCurrencyExchange />
                 <div className="strategies__item-info-wrapper">
                   <h1 className="strategies__item-info-title">Валютный робот</h1>
-                  <p className="strategies__item-info-subtitle">Умеренно-агрессивная стратегия (50-100 сделок в день).</p>
+                  <p className="strategies__item-info-subtitle">Умеренно-агрессивная стратегия</p>
                 </div>
               </div>
               <p className="strategies__item-text">{CurrencyStrategy}</p>

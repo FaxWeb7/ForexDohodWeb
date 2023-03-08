@@ -188,6 +188,11 @@
             &-icon{
                 display: block;
             }
+            &-menu{
+                &.active{
+                    top: 60px;
+                }
+            }
         }
         &__link{
             width: 20px;
