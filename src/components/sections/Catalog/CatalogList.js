@@ -10,7 +10,7 @@ export const CatalogList = [
     profitLink: 'https://www.myfxbook.com/members/Maximilian777/clever-10000/9488108'
   },
   {
-    title: 'Мини-Золотой - 40.000₽',
+    title: 'Мини-Золотой - 50.000₽',
     text: <>Мини-Золотой робот - это фактически копия Золотого робота, с такой же доходностью и стратегией торговли, но отличие в том, что на его депозит вы можете положить от 100$ до 2.000$.</>,
     profitLink: 'https://www.myfxbook.com/members/Maximilian777/clever-gold/9534287'
   },
