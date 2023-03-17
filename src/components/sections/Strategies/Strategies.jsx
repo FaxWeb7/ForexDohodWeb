@@ -19,7 +19,7 @@ const Strategies = () => {
                 <AiFillGolden />
                 <div className="strategies__item-info-wrapper">
                   <h1 className="strategies__item-info-title">Золотой робот</h1>
-                  <p className="strategies__item-info-subtitle">Консервативная стратегия</p>
+                  <p className="strategies__item-info-subtitle">Умеренная стратегия</p>
                 </div>
               </div>
               <p className="strategies__item-text">{GoldStrategy}</p>
